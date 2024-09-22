@@ -28,7 +28,7 @@ def f(x):
     return x**2 - 4 
 
 """ Definimos el intervalo y su tolerancia """
-a = 4
+a = 1
 b = 3
 tolerance = 0.1
 counter = 0
@@ -38,6 +38,6 @@ root = bisection(f, a, b, tolerance)
 
 """ Distintas respuestas"""
 if  root == None:
-    print(f"El teorema no se cumple, por la raíz no se encuentra en este intervalo.")
+    print(f"El teorema no se cumple, por lo tanto la raíz no se encuentra en este intervalo.")
 else:
     print(f"La raíz es {root}" + f" con {counter} iteraciones.")
